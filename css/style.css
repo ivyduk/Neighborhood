@@ -6,10 +6,29 @@ body {
 
 header {
     background-color: rgb(196, 255, 216);
+    display: inline-block;
+}
+
+a.skip-to-main-content-link {
+    background-color: azure;
+}
+
+header img {
+    width: 10%;
+    padding-top: 20px;
 }
 
 nav {
-    background-color: bisque;
+    display: inline-block;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
 }
 
 main {
@@ -21,10 +40,10 @@ footer {
     background-color: blanchedalmond;
 }
 
-li {
+/*li {
     display: inline-block;
     width: 33%;
-}
+}*/
 
 h1 {
     text-align: center;
@@ -34,4 +53,17 @@ h1 {
 
 p {
     line-height: 20px;
+}
+
+.images {
+    display: grid;
+    background-color: aquamarine;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+
+.images img{
+    width: 100%;
 }
